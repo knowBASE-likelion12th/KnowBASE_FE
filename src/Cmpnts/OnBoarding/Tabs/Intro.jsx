@@ -24,7 +24,6 @@ function Intro(){
     <Input title={'멘토링 가능한 시간을 입력해 주세요.'} style={'13rem'} input={availableTime} inputChange={setAvailableTime}/>
     <Input title={'연락 가능한 카카오톡 아이디를 입력해 주세요.'} style={'13rem'} input={id} inputChange={setId}/>
     <Input title={'멘토링에 있어 멘토님의 강점이라고 생각되는 것을 적어주세요'} style={'13rem'} input={strength} inputChange={setStrength}/>
-
     </>
     )
 }

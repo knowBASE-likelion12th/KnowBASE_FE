@@ -7,8 +7,8 @@ import { isEditState } from './recoil';
 
 import {
     introState,
-    availableTimeState,
-    strengthState,
+    probableTimeState,
+    prosState,
     beforeRoadmapState,
     whileRoadmapState,
     afterRoadmapState,
@@ -17,8 +17,8 @@ import {
 
 export default function MentoringComponent({ title, content, isEditable, onSaveClick }) {
     const [intro, setIntro] = useRecoilState(introState);
-    const [availableTime, setAvailableTime] = useRecoilState(availableTimeState);
-    const [strength, setStrength] = useRecoilState(strengthState);
+    const [availableTime, setAvailableTime] = useRecoilState(probableTimeState);
+    const [strength, setStrength] = useRecoilState(prosState);
     const [beforeRoadmap, setBeforeRoadmap] = useRecoilState(beforeRoadmapState);
     const [whileRoadmap, setWhileRoadmap] = useRecoilState(whileRoadmapState);
     const [afterRoadmap, setAfterRoadmap] = useRecoilState(afterRoadmapState);
@@ -45,6 +45,10 @@ export default function MentoringComponent({ title, content, isEditable, onSaveC
             get = strength;
             set = setStrength;
             break;
+        case '나의':
+        get = strength;
+        set = setStrength;
+        break;
         // 다른 경우 추가
         default:
             get = intro;
@@ -53,7 +57,8 @@ export default function MentoringComponent({ title, content, isEditable, onSaveC
     }
 
     const handleInputChange = (e) => {
-        setInputContent(e.target.value);
+        set(e.target.value);
+        console.log(get)
     };
 
     const handleSaveClick = () => {
@@ -64,7 +69,7 @@ export default function MentoringComponent({ title, content, isEditable, onSaveC
         <div className="mentoring_component_wrap">
             <div className="mentoring_component_content">
                 <div className="mentroing_title">{title}</div>
-                <textarea className='mc_textarea' value={inputContent} onChange={handleInputChange} readOnly={!isEditable}></textarea>
+                <textarea className='mc_textarea' value={inputContent} onChange={handleInputChange} readOnly></textarea>
                 {isEditable && <button onClick={handleSaveClick}>Save</button>}
             </div>
         </div>

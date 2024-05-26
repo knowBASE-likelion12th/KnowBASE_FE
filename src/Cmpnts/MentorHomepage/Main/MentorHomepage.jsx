@@ -17,7 +17,7 @@ import ReviewModal from '../../ReviewModal/ReviewModal';
 import ContactModal from '../../ContactModal/ContactModal';
 import MentorReview from '../Review/MentorReview';
 import MentorIntro from '../Intro/MentorIntro';
-import MentorRoadmap from '../Roadmap/Roadmap';
+import MentorRoadmap from '../Roadmap/MentorRoadmap';
 import MentorQA from '../Qna/MentorQA';
 import ReviewCreate from '../../ReviewCreateModal/ReviewCreate';
 

@@ -28,7 +28,7 @@ export default function MentorQA() {
 
   return (
     <div className="mentoring_qa_wrap">
-        <div className="qa_title"> 자주 묻는 질문</div>
+        <div className="mtt_title"> 자주 묻는 질문</div>
       {isEditing ? (
         <div>
           {mentorQA.map((qa, i) => (
