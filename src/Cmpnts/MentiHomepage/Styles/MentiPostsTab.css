@@ -1,0 +1,21 @@
+.mtt_title{
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 3.5rem;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.mtt_title > div {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.mtt_title > div >img {
+    width: 5rem;
+    height: 5rem;
+}

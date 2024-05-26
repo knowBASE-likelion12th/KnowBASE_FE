@@ -1,0 +1,36 @@
+.mentroing_review_wrap{
+    display: flex;
+    display: row;
+    margin-top: 3rem;
+}
+.review_img_wrap{
+    display: flex;
+    display: row;
+}
+.review_content{
+    margin-left: 2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.review_title{
+    font-size: 2rem;
+}
+.review_comment{
+    font-size: 1.5rem;
+}
+.review_detail_btn{
+    width: 6vw;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1CA764;
+    border: 1px solid #1CA764;
+}

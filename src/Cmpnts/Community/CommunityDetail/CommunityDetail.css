@@ -1,0 +1,164 @@
+.side-padding-30vw{
+    padding:0 30vw 0 30vw;
+}
+
+.cmd_title{
+    /* margin-top: 9.1rem; */
+    color: #000;
+font-family: "Noto Sans";
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 4.3rem;
+}
+
+.cmd_line{
+    height: 1px;
+    background-color: lightgrey;
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.cmd_profile-wrap{
+    display: flex; 
+    justify-content: space-between;  
+    margin-bottom: 5.6rem;
+}
+.cmd_profile-wrap>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+}
+.cmd_profile-img{
+    width: 2.6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit:contain;
+}
+.cmd_profile-img >img{
+    width: 2.6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.cmd_name{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cmd_date{
+    color: #000;
+    text-align: right;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.cmd_postImg{
+    width: 100%;
+    height: 74.8rem;
+    object-fit: fill;
+}
+
+.cmd_postImg > img{
+    width: 100%;
+    height: 74.8rem;
+}
+
+
+.cmd_content{
+    margin-bottom: 10rem;
+    white-space: normal; /* 여러 줄로 표시 */
+    word-wrap: break-word; /* 긴 단어를 줄 바꿈 */
+    overflow-wrap: break-word; /* 긴 단어를 줄 바꿈 */
+}
+.cmd_cmts-info-wrap{
+    display: flex;
+    gap: 1.4rem;
+    margin-bottom: 3.9rem;
+}
+
+.cmd_cmts-cnt{
+    color: rgba(0, 0, 0, 0.40);
+font-family: "Noto Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.cmd_input-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cmd_input-wrap > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cmd_profile{
+    width: 2.6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%; 
+    object-fit: contain;  
+}
+
+.cmd_profile >img{
+    width: 2.6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;   
+}
+
+.cmd_input-wrap{
+    gap: 2.7rem;
+    margin-bottom: 6rem;
+}
+
+.cmd_input-wrap>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--Untitled-, rgba(0, 0, 0, 0.40));
+    height: 5rem;
+    border-radius: 5px;
+    padding-left: 1.8rem;
+    padding-right: 1.2vw;
+}
+.cmd_input-wrap> div >input {
+    border: none;
+    width: 100%;
+}
+
+.cmd_submit{
+    width: 4rem;
+    color: var(--Untitled-, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cmd_input-wrap> div >input::placeholder {
+color: var(--Untitled-, rgba(0, 0, 0, 0.40));
+font-family: "Noto Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

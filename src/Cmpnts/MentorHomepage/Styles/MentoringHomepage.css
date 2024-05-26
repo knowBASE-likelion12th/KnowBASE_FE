@@ -1,0 +1,135 @@
+.mh_wrap{
+    position: relative;
+}
+
+.mh_title-wrap{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    height: 18.2rem;
+    background-color:#1CA764;
+    display: flex;
+    align-items: center;
+}
+
+.mh_title{
+    color: #FFF;
+    font-family: Noto Sans, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2.7rem;
+}
+
+
+
+.mh_subtitle{
+    color: #FFF;
+    font-family: Noto Sans, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.mh_profile-wrap{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 6.5vw;
+    margin-top: 4rem;
+    height: 37.8rem;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    padding: 6.5rem 4.1vw 6.5rem 4.1vw;
+}
+
+.mh_proflie-img-wrap{
+    display: block;
+    width: 13vw;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.mh_proflie-img-wrap > img{
+    width: 13vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.mh_proflie-info-wrap{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.mh_name{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mh_id{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mh_btn-wrap{
+    display: flex;
+    gap: 2.2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mh_ask-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7rem;
+    border-radius: 10px;
+    border: 2px solid #1CA764;
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mh_req-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7rem;
+    background: #1CA764;
+    border-radius: 10px;
+    border: 2px solid var(--, #1CA764);
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mh_req-btn-identified{
+    width: 100%;
+    visibility: hidden;
+
+}

@@ -1,0 +1,103 @@
+.post_input-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.7rem;
+}
+
+.post_input-wrap > input {
+    border: none;
+    height: 3.8rem;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.post_input-wrap > input::placeholder {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.post_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.8vw;
+    height: 4.6rem;
+    background-color: #D9D9D9;
+    border-radius: 5px;   
+}
+.post_submit >div {
+    color: white;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;    
+}
+
+.post_line{
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+    margin-bottom: 19.5rem;
+}
+.post_content-input{
+    position: relative;
+}
+.post_content-input >input{
+    border: none
+}
+
+.post_gallery{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #1CA764;
+    width: 8.8vw;
+    height: 4.6rem;
+    background-color: transparent;
+    border-radius: 5px;
+    /* padding: 10px; */
+    color: #1CA764;
+
+}
+
+.post_gallery > div{
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.post_content-input > textarea{
+    border: none;
+    outline: none;
+    height: 40vh;
+    width: 100%;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.post_content-input > textarea::placeholder{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

@@ -1,0 +1,26 @@
+
+.hd_navbar-wrap{
+  display: flex;
+  gap: 4.5rem;
+}
+
+.hd_nav {
+    display: flex;
+    color: #000;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.selected{
+  color: #000;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

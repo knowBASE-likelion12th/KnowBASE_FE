@@ -1,0 +1,69 @@
+.modal-contact_wrap{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    padding: 20% 36vw 25% 36vw;
+}
+
+.modal-contact_content-wrap{
+    position: relative;
+    width: 100%;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    /* padding-top: 3rem;
+    padding-bottom: 7.3rem; */
+    padding: 3rem 5.5rem 7.3rem 5.5rem;
+    border-radius: 10px;
+}
+
+.modal_cancel{
+    position: absolute;
+    right: 1.4vw;
+    top: 2.5rem;
+    object-fit: contain;
+    width: 23px;
+    height: 23px;
+}
+
+.modal_cancel > img{
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.modal-contact_title{
+    color: #1CA764;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-modal_id-wrap{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #F0EFEF;
+}
+
+.contact-modal_id-wrap >div{
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

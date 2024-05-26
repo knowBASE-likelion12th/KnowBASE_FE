@@ -1,0 +1,41 @@
+.review_input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    border: 2px solid #1CA764;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* 요소들을 동일한 간격으로 정렬합니다. */
+    margin: 4rem auto 0;
+}
+
+/* 후기 텍스트 스타일을 추가합니다. */
+.review_input span {
+    margin: 1rem;
+    padding: 1rem; /* 텍스트 주변에 여백을 추가합니다. */
+    font-size: 2rem;
+}
+
+/* 별점 관련 아이콘들의 스타일을 추가합니다. */
+.star_rating {
+    display: flex;
+    align-items: center;
+}
+.fill_star{
+    color: green;
+}
+/* 별점 숫자의 스타일을 추가합니다. */
+.number_rating {
+    margin-right: 1rem; /* 별점 숫자와 후기 작성하기 버튼 사이에 간격을 추가합니다. */
+}
+
+.review_btn{
+    margin: 1rem;
+    padding: 1rem;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 10px;
+    border-radius: 5px;
+    background: #1CA764;
+}

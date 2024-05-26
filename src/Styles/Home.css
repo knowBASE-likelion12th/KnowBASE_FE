@@ -1,0 +1,342 @@
+.background_wrap{
+    border-radius: 2286px;
+    background: radial-gradient(50% 50% at 50% 50%, #D5F7DE 0%, rgba(255, 255, 255, 0.32) 100%);
+}
+.top_text{
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh
+}
+.mentor_wrap {
+    width: 75%;
+    margin: 0 auto; /* 좌우 여백을 auto로 설정하여 가운데 정렬합니다. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20rem;
+   
+}
+
+.mentor_middle {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* 내부 요소들을 가운데 정렬합니다. */
+}
+.mentor_left {
+    margin-top: 20rem;
+    position: relative;
+}
+
+.green {
+    position: relative;
+}
+
+.overlay_green {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; /* 텍스트와 이미지 사이의 간격을 조정할 수 있습니다 */
+    margin-left: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.first_green_ment {
+    width: 100%;
+    font-size: 2.5rem; /* 텍스트의 크기 조정 */
+    font-weight: 400; /* 텍스트의 굵기 조정 */
+    line-height: normal; /* 텍스트의 줄 간격 조정 */
+    color: #FFF;
+    font-family: "Noto Sans";
+}
+
+.first_green_ment b {
+    font-size: 2.5rem; /* 강조된 텍스트의 크기 조정 */
+    font-weight: 600; /* 강조된 텍스트의 굵기 조정 */
+    color: #FFF;
+    font-family: "Noto Sans";
+}
+.second_green_ment {
+    display: flex;
+    align-items: center;
+    margin-top: 4.4rem;
+    color: #D5F7DE;
+    font-family: "Noto Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mentor_right{
+    margin-top: 4rem;
+    position: relative;
+}
+.mint{
+    position: relative;
+}
+.overlay_mint{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; /* 텍스트와 이미지 사이의 간격을 조정할 수 있습니다 */
+    margin-left: 6rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+.first_mint_ment{
+    width: 100%;
+    font-size: 2.5rem; /* 텍스트의 크기 조정 */
+    font-weight: 400; /* 텍스트의 굵기 조정 */
+    line-height: normal; /* 텍스트의 줄 간격 조정 */
+    color: #000;
+    font-family: "Noto Sans";
+}
+.first_mint_ment b{
+    font-size: 2.5rem; /* 강조된 텍스트의 크기 조정 */
+    font-weight: 600; /* 강조된 텍스트의 굵기 조정 */
+    color: #000;
+    font-family: "Noto Sans";
+}
+.second_mint_ment{
+    display: flex;
+    align-items: center;
+    /* margin-top: 9rem; */
+    margin-top: 2.4rem;
+    color: #0A7700;
+    font-family: "Noto Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mentortitle {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.mentorImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18rem;
+}
+
+p{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.mentee_wrap {
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30rem;
+}
+
+.mentee_left {
+    position: relative;
+}
+
+.overlay_mentee {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: #000;  
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 2rem;
+}
+
+.overlay_mentee img {
+    position: relative;
+    z-index: 1; /* 이미지를 가장 위로 올리기 */
+}
+.mentee_right{
+    margin-right: 10%;
+
+}
+.menteeTitle{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15rem;
+    text-align: center;
+}
+.mentee_right div{
+    color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mentee_right b{
+    color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.users{
+    width: 60%;
+    margin-left: 15%;
+}
+
+.circle1{
+    margin-bottom: 6rem;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #D5F7DE;
+}
+.circle2{
+    margin-bottom: 6rem;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color:  #1CA764;
+}
+.circle3{
+    margin-bottom: 6rem;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #0A7700;
+}
+.promote_text{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.promote_text div{
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+.mentoring_services{
+    width: 75%;
+    margin-left: 13%;
+    
+}
+.mentoring_text{
+    color: rgba(0, 0, 0, 0.80);
+    text-align: left;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15rem
+}
+.mentoring_examples {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.mentoring_examples .mentoringImage1 {
+    position: relative;
+}
+
+.mentoring_examples .example1,
+.mentoring_examples .example2,
+.mentoring_examples .example3 {
+    position: relative;
+}
+
+.mentoring_examples .example1 div,
+.mentoring_examples .example2 div,
+.mentoring_examples .example3 div {
+    position: absolute;
+    top: 3rem; /* 텍스트 상단 정렬 */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left; /* 텍스트 가운데 정렬 */
+    margin-left: 3rem;
+    width: 100%; /* 가로 너비 100%로 설정 */
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mentoring_examples .example1 img,
+.mentoring_examples .example2 img,
+.mentoring_examples .example3 img {
+    position: absolute;
+    bottom: 2rem; /* 이미지 하단 정렬 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* 이미지 크기 조정 */
+    height: auto; /* 이미지 크기 자동 조정 */
+}
+
+
+
+.bottom_text {
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 35rem;
+    margin-bottom: 20rem;
+  }
+  
+  .bottom_text span {
+    display: block;
+    color: #1CA764;
+    margin-bottom: 1rem; 
+  }
+  

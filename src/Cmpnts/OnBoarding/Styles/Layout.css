@@ -1,0 +1,143 @@
+.layout_wrap{
+    width: 100%;
+    padding: 6.3rem 20vw 6.3rem 20vw;
+    
+}
+
+.layout_content-wrap{
+    border-radius: 20px;
+    height: 100%;
+    background: #F8FFFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.layout_content-wrap >div{
+    color: #000;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 6.3rem;
+}
+
+.layout_steps-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.8vw;
+    margin-bottom: 6.3rem;
+}
+
+.layout_unselected{
+    color: #908F8F;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.step{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items:center; */
+    position: relative;
+    width: 4.5vw;
+    aspect-ratio: 1/1;
+}
+
+.step>div{
+    height: 5.6rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.empty_step{
+    z-index: 2;
+    width: 1.8vw;
+    aspect-ratio: 1/1;
+    /* margin-bottom: 2rem; */
+    /* position: absolute;
+    top: 0.95rem;
+    left: 1.35vw;  */
+}
+
+.layout_selected{
+    color: #1CA764;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.layout_input-wrap{
+    width: 100%;
+}
+
+.layout_input-wrap>div{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15rem;
+}
+
+.layout_btn-wrap{
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.layout_prev-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    border-radius: 5px;
+    border: 2px solid #1CA764;
+    
+}
+.layout_prev-btn > div{
+    color: #908F8F;;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.layout_next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    border-radius: 5px;
+    background-color: #1CA764;
+}
+
+.layout_next-btn > div{
+    /* color: #908F8F; */
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

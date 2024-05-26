@@ -1,0 +1,52 @@
+.mth-navbar-wrap{
+    width: 100%;
+    
+}
+
+.mth-navs{
+    display: flex;
+    gap: 3vw;
+    margin-bottom: 1.5rem;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    
+}
+
+.mth-nav{
+    width: 100%;
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.mth-line{
+    width: 100%;
+    position: relative;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.mth-line-highlighted{
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #93FF8A;
+    height: 3px;
+    width: 10vw;
+} 
+
+.mh_selected{
+    color: #0A7700;
+font-family: "Noto Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

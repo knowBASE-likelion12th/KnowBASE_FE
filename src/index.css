@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Ramabhadra';
+  src: url('./Font/Ramabhadra-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  /* 경로 수정: 특수 문자와 공백을 제거하거나 URL 인코딩 사용 */
+  src: url('./Font/NotoSans-VariableFont_wdth_wght.ttf') format('truetype');
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

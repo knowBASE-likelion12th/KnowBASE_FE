@@ -1,0 +1,55 @@
+.profile-wrap{
+    background: #FFFFFFC2;
+    padding: 54px 2vw 52px 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mentor-profile-pic{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: fill;
+    overflow: hidden;
+    margin-bottom: 1.7rem;
+}
+
+.mentor-profile-pic > img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-name{
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+.mentor-tags{
+    display: flex;
+    gap: 8.53px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.mentor-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23.887px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

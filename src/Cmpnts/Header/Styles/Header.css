@@ -1,0 +1,33 @@
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0342C9;
+    height: 13rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+}
+/* 
+.logo-wrap{
+    font-size: 4rem;
+    color: #0342C9;
+    font-family: 'lexend', sans-serif;
+}
+
+.logo-wrap > svg {
+    width: 45px;
+    height: 45px;
+    margin-right: 7px;
+} */
+
+.hd_logined-name{
+    display: fle;
+    color: #000;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

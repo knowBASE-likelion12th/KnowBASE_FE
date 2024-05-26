@@ -1,0 +1,143 @@
+.info_wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+    background-image: url('../assets/info_bg.png');
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 색상에만 투명도 적용 */
+    background-blend-mode: multiply; /* 배경 이미지와 색상을 혼합 */
+    height: 60rem;
+}
+
+
+.info_upper{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.info_subtitle{
+    color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.info_title{
+    color: #FFF;
+    font-family: Ramabhadra, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info_content{
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profile-card-wrap{
+    width: 18.75vw;
+    height: 470px;
+}
+
+.mentor-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: -9rem;
+    width: 80vw;
+    
+}
+
+.info_dropdown-wrap{
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.cm_search-wrap{
+    position: absolute;
+    top: 5.5rem;
+}
+
+.info_dropdown{
+    
+    display: flex;
+    gap: 9vw;
+    justify-content: space-between;
+}
+.info_dropdown >div:nth-child(1){
+    display: flex;
+    gap: 1rem;   
+}
+
+.info_search-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 3.65vw;
+    border-radius: 5px;
+    border: 2px solid #F0EFEF;
+    opacity: 0.7;
+    
+}
+
+.info_search-wrap > img{
+    height: 22.5px;
+    width: 22.5px;
+    border-radius: 5px;
+}
+.cm_dropdown-wrap{
+    position: absolute;
+    bottom: 0px;
+    right: 20vw;
+    margin-bottom: 14px;
+}
+
+.cm_btn-wrap{
+    
+    display: flex;
+    position: absolute;
+    
+    top: 50px;
+    right: 2.3vw;
+    justify-content: space-between;
+   
+}
+.cm_btn{
+    padding: 11px 23px 11px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    background: #1CA764;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1,0 +1,88 @@
+
+.mentoring-block-wrap {
+    width: 100%
+}
+.mentoring-block-wrap > *{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.mentoring-block-image{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+.mentoring-block-image >img{
+    width: 100%;
+    
+}
+
+.mentoring-block-wrap > div:nth-child(2) { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.5rem;
+}
+
+.mentoring-block-profile-wrap{
+    display: flex;
+    gap: 0.5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mentoring-block-profile-img{
+    width: 1.7vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: fill;
+    display: flex;
+    align-items: center;
+}
+
+.mentoring-block-profile-img >img{
+    width: 1.7vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+
+.mentoring-block-name {
+    color: #000;
+font-family: "Noto Sans";
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.mentoring-block-content{
+    word-break:break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 표시할 줄의 최대 수 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      
+      
+}
+
+.tags{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:space-between;
+    gap: 0.5vw;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666666;
+    width: 100%;
+    height: 2.8rem;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.5rem;
+}
