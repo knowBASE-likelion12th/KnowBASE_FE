@@ -11,7 +11,7 @@ import { useRecoilState } from 'recoil';
 
 
 
-export default function ReviewBlock({ before, after, title, rating, date, comment }) {
+export default function ReviewBlock({ before, after, reviewTitle, rating, date, reviewContent }) {
     // 평점을 표시하는 함수
     const renderRatingStars = () => {
         const starIcons = [];
@@ -30,15 +30,32 @@ export default function ReviewBlock({ before, after, title, rating, date, commen
     return (
         <div className="mentroing_review_wrap">
             <div className="review_img_wrap">
-                <img src={before} className="before_img" alt="Before"/>
-                <img src={after} className="after_img" alt="After"/>
+                <div className="before_img">
+                    <img src={before} alt="Before"/>
+                    <div>
+                    <div className='review_text'>before</div>
+                    </div>
+                    
+                </div>
+                <div className="after_img">
+                    <img src={after} alt="After"/>
+                    <div />
+                    <div className='review_text'>after</div>
+                </div>
             </div>
             <div className="review_content">
-                <div className="review_title">{title}</div>
+                <div>
+                <div className="review_title">{reviewTitle}</div>
                 <div className="review_rating">{renderRatingStars()}</div>
+                </div>
+                <div>
                 <div className="review_date">{date}</div>
-                <div className="review_comment">{comment}</div>
-                <button className="review_detail_btn">더보기</button>
+                <div className="review_comment">{reviewContent}</div>
+                </div>
+                <div className="review_detail_btn">
+                    <button>더보기</button>
+                </div>
+                
             </div>
         </div>
     );

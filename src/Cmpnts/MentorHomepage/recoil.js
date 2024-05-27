@@ -64,29 +64,76 @@ export const ReviewListState = atom({
     key:'reviewListState',
     default:[
         {
+            mentorId: 1,
+            menteeId: 3,
+            reviewTitle: '우리집에 생겨버린 영화관!',
+            nickname: "nickname!",
             before: testImg,
             after: testImg,
-            title: '우리집에 생겨버린 영화관!',
             rating: 0,
             date: '2024.00.00',
-            comment:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!'
+            reviewContent:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!',
+            satisfaction: 3,
+            period: "6개월",
+            budget: "100만원"
         },
         {
+            mentorId: 1,
+            menteeId: 3,
+            reviewTitle: '우리집에 생겨버린 영화관!',
+            nickname: "nickname!",
             before: testImg,
             after: testImg,
-            title: '우리집에 생겨버린 영화관!',
             rating: 0,
             date: '2024.00.00',
-            comment:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!'
+            reviewContent:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!',
+            satisfaction: 3,
+            period: "6개월",
+            budget: "100만원"
         },
         {
+            mentorId: 1,
+            menteeId: 3,
+            reviewTitle: '우리집에 생겨버린 영화관!',
+            nickname: "nickname!",
             before: testImg,
             after: testImg,
-            title: '우리집에 생겨버린 영화관!',
             rating: 0,
             date: '2024.00.00',
-            comment:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!'
+            reviewContent:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!',
+            satisfaction: 3,
+            period: "6개월",
+            budget: "100만원"
         },
+        {
+            mentorId: 1,
+            menteeId: 3,
+            reviewTitle: '우리집에 생겨버린 영화관!',
+            nickname: "nickname!",
+            before: testImg,
+            after: testImg,
+            rating: 0,
+            date: '2024.00.00',
+            reviewContent:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!',
+            satisfaction: 3,
+            period: "6개월",
+            budget: "100만원"
+        },
+        {
+            mentorId: 1,
+            menteeId: 3,
+            reviewTitle: '우리집에 생겨버린 영화관!',
+            nickname: "nickname!",
+            before: testImg,
+            after: testImg,
+            rating: 0,
+            date: '2024.00.00',
+            reviewContent:'멘토님 덕분에 완전 쉽게 홈시어터 구축했습니당 최고에요. 특히 홈시어터 구축할때 예산때문에 망설이는 경우가 많은데 예산에 맞는 프로젝 최대 세줄까지만나오고 나머지는 더보기 페이지!',
+            satisfaction: 3,
+            period: "6개월",
+            budget: "100만원"
+        },
+        
     ]
 })
 

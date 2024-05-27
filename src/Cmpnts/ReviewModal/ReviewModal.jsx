@@ -27,7 +27,7 @@ function ReviewModal({ name, title, content, imgs, date, starRating, term, budge
           <img className="modal_cancel" src={close} alt="close" />
         </div>
         <div className="modal_title">
-          title
+          {crntClickedReview.reviewTitle}
         </div>
 
         <div className="modal_line"></div>
@@ -37,7 +37,7 @@ function ReviewModal({ name, title, content, imgs, date, starRating, term, budge
             <div className="modal_profile-img">
               <img src={testImg} alt="profile" />
             </div>
-            <div className="modal_profile-name">name</div>
+            <div className="modal_profile-name">{crntClickedReview.nickname}</div>
           </div>
           <div className="modal_date">
             {crntClickedReview.date}
@@ -60,8 +60,8 @@ function ReviewModal({ name, title, content, imgs, date, starRating, term, budge
         </div>
 
         <div className="modal_review-title">후기 내용</div>
-        <div className="modal_review-content">content</div>
-        <ReviewGrid starRating={crntClickedReview.rating} term='term' budget='budget' />
+        <div className="modal_review-content">{crntClickedReview.reviewContent}</div>
+        <ReviewGrid starRating={crntClickedReview.satisfaction} term={crntClickedReview.period} budget={crntClickedReview.budget} />
       </div>
     </div>
   );

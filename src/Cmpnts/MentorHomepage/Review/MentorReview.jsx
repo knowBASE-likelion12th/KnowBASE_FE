@@ -21,14 +21,7 @@ export default function MentorReview(){
     const [isReviewCreateClicked, setIsReviewCreateClicked] = useRecoilState(isReviewCreateClickedState)
 
     function moreBtnHandler(e){
-        setCrntClickedReview({
-            before: e.before,
-            after: e.after,
-            title: e.title,
-            rating: e.rating,
-            date: e.date,
-            comment: e.comment
-        })
+        setCrntClickedReview(e)
         setIsReviewClicked(true)
     }
 
@@ -57,7 +50,7 @@ export default function MentorReview(){
         
         <div className="review_block_container">
             {reviewList.map((e,i)=>
-            <div onClick={()=>moreBtnHandler(e)}><ReviewBlock key={i} before={e.before} after={e.after} title={e.title} rating={e.rating} date={e.date} comment={e.comment}/> </div>)}
+            <div onClick={()=>moreBtnHandler(e)}><ReviewBlock key={i} before={e.before} after={e.after} reviewTitle={e.reviewTitle} rating={e.rating} date={e.date} reviewContent={e.reviewContent}/> </div>)}
             
         </div>
         </>

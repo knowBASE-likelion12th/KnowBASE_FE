@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.60);
     width: 100%;
     padding:  20% 19vw 20% 19vw;
+    height: 100%;
 }
 
 .review-create-modal_wrap{
@@ -129,7 +130,7 @@
 .modal_profile-block{
     width: 9vw;
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -149,7 +150,7 @@
 .modal_profile-name{
     color: #000;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
