@@ -48,30 +48,3 @@ textarea{
     line-height: normal;
 }
 
-.mentorIntro_btn_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18vw;
-    height: 7rem;
-    border-radius: 10px;
-    background-color: #1CA764;
-}
-
-.mentorIntro_btn_container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.mentorIntro_btn_wrap > button{
-    border: none;
-    background-color: transparent;
-    color: #FFF;
-    text-align: center;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}

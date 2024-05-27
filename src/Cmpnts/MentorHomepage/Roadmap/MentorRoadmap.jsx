@@ -1,11 +1,11 @@
-import '../Intro/MentorIntro.css'
-import '../../OnBoarding/Styles/Input.css'
+import '../../OnBoarding/Model/MentorInput.css'
 
 import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import MentoringComponent from '../MentoringComponent';
 import { mentorIntroState, isEditState } from '../recoil';
 import MentorInput from '../../OnBoarding/Model/MentorInput';
+import before from '../../../assets/before.png'
 
 import {
     introState,
@@ -57,17 +57,25 @@ export default function MentorRoadmap() {
     return (
         <div className='mentoring_intro_container'>
             <div style={{height: '4rem'}} />
+
+            <div style={{position: "relative"}}>
             <MentorInput title='멘토링 전' height='15.5rem' value={beforeRoadmap} inputChange={setBeforeRoadmap} isEdit={isRoadmapEditClicked}/>
+            <img src={before} style={{position: 'absolute', top: '9rem', right: '1vw'}}/>
+            </div>
 
+            <div style={{position: "relative"}}>
             <MentorInput title='멘토링 시작' height='15.5rem' value={whileRoadmap} inputChange={setWhileRoadmap} isEdit={isRoadmapEditClicked}/>
+            <img src={before} style={{position: 'absolute', top: '9rem', right: '1vw'}}/>
+            </div>
 
+            <div style={{position: "relative"}}>
             <MentorInput title='멘토링 후' height='15.5rem' value={afterRoadmap} inputChange={setAfterRoadmap} isEdit={isRoadmapEditClicked}/>
+            <img src={before} style={{position: 'absolute', top: '9rem', right: '1vw'}}/>
+            </div>
             <div className='mentorIntro_btn_container'>
             <div className="mentorIntro_btn_wrap">
-              {isRoadmapEditClicked ?<button className="save_button" onClick={saveBtnHandler}>저장하기</button>:
-              <button className="modify_btn" onClick={editBtnHandler}>수정하기</button> 
-              }  
-                
+              {isRoadmapEditClicked ?<button className="save_btn" onClick={saveBtnHandler}>저장하기</button>:
+              <button className="modify_btn" onClick={editBtnHandler}>수정하기</button>}
             </div>       
             </div>
         </div>

@@ -1,12 +1,19 @@
 .mentroing_review_wrap{
     display: flex;
-    display: row;
-    margin-top: 3rem;
+    margin-top: 14.4rem;
 }
 .review_img_wrap{
     display: flex;
-    display: row;
 }
+
+.before_img, .after_img{
+    width: 35.4rem;
+    height: 38.3rem;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+
 .review_content{
     margin-left: 2rem;
     margin-top:1rem;

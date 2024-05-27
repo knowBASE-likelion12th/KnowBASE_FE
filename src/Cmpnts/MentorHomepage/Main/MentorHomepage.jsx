@@ -90,6 +90,8 @@ function MentoringHomepage() {
             {/* <div style={{height: '6.5rem'}} /> */}
             {renderContent()}
         </div>
+        <div style={{height: '5rem'}} /> 
+        {/* bottom margin */}
 
         {/* conditional rendering */}
         <ReviewModal />

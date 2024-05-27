@@ -2,7 +2,7 @@ import { atom } from 'recoil'
 
 export const introState = atom({
     key: 'introState',
-    default: '영화보는걸 좋아하는 5년차 작곡가입니다 뭐 사용자의 자유에 의해 내용은 더 길어질수도있습니다 제가 더이상 쓸만한 내용이 없어서 지금 이렇게 쓰고있는데 최대 세줄정도가 적당하겠네요'
+    default: '영화보는걸 좋아하는 5년차 작곡가입니다뭐 사용자의 자유에 의해 내용은 더 길어질수도있습니다 제가 더이상 쓸만한 내용이 없어서 지금 이렇게 쓰고있는데 최대 세줄정도가 적당하겠네요'
 })
 
 export const probableTimeState = atom({
@@ -28,6 +28,46 @@ export const whileRoadmapState = atom({
 export const afterRoadmapState = atom({
     key: 'afterRoadmapState',
     default: '변경된 최종 방 사진을 가지고 최종 피드백을 주고 받으며 멘토링은 끝이납니다.'
+})
+
+export const q1State = atom({
+    key: 'q1State',
+    default: '질문 내용을 입력해주세요'
+})
+
+export const a1State = atom({
+    key: 'a1State',
+    default: '답변 내용을 입력해 주세요.'
+})
+
+export const q2State = atom({
+    key: 'q2State',
+    default: '질문 내용을 입력해주세요'
+})
+
+export const a2State = atom({
+    key: 'a2State',
+    default: '답변 내용을 입력해 주세요.'
+})
+
+export const q3State = atom({
+    key: 'q3State',
+    default: '질문 내용을 입력해주세요'
+})
+
+export const a3State = atom({
+    key: 'a3State',
+    default: '답변 내용을 입력해 주세요.'
+})
+
+export const q4State = atom({
+    key: 'q4State',
+    default: '질문 내용을 입력해주세요'
+})
+
+export const a4State = atom({
+    key: 'a4State',
+    default: '답변 내용을 입력해 주세요.'
 })
 
 export const isIntroEditClickedState = atom({

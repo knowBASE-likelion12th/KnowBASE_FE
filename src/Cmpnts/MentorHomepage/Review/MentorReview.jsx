@@ -12,10 +12,10 @@ import { isReviewClickedState } from '../../../recoil';
 import { crntClickedReviewState } from '../recoil';
 
 export default function MentorReview(){
-    const [reviewList, setReivewList] = useRecoilState(ReviewListState)
     const [starRating, setStarRating] = useState(1);
     const numberRating = starRating.toFixed(1);
 
+    const [reviewList, setReivewList] = useRecoilState(ReviewListState)
     const [isReviewClicked, setIsReviewClicked] = useRecoilState(isReviewClickedState)
     const [crntClickedReview, setCrntClickedReview] = useRecoilState(crntClickedReviewState)
     const [isReviewCreateClicked, setIsReviewCreateClicked] = useRecoilState(isReviewCreateClickedState)
@@ -39,7 +39,9 @@ export default function MentorReview(){
     return(
         <>
         <div className="review_input">
-            <span> 후기</span>
+            <span className='review-title'> 후기</span>
+            <div style={{display: 'flex', gap: '17.8rem'}}>
+            <div className='star-ranking-wrap'>
             <span className="star_rating"> 
             {[...Array(starRating)].map((a, i) => (
             <PiStarFill className="fill_star" key={i} onClick={() => setStarRating(i + 1)} />))}
@@ -48,7 +50,9 @@ export default function MentorReview(){
             <PiStarLight className="vacant_star" key={i} onClick={() => setStarRating(starRating + i + 1)} />))} 
             </span>
             <span className="number_rating">{numberRating}</span>
+            </div>
             <button className="review_btn" onClick={newReviewHandler}> 후기 작성하기</button>
+            </div>
         </div>
         
         <div className="review_block_container">
