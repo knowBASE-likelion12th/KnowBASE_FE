@@ -112,7 +112,7 @@ export default function MenteeSignup() {
 
     const handleSignUp = async () => {
           try {
-            const response = await fetch("http://52.78.165.203:8080", {
+            const response = await fetch("http://52.78.165.203:8080/api/user/register/mentee", {
                   method : "POST",         
                   headers : {            
                       "Content-Type":"application/json; charset=utf-8"
