@@ -14,6 +14,7 @@ import { useNavigate } from "react-router";
 import '../Styles/MenteeSignup.css';
 import downArrow from '../assets/downArrow.png';
 import Home from './Home'
+import Signin from "./Signin";
 
 export default function MenteeSignup() {
     const navigate = useNavigate();
@@ -41,8 +42,9 @@ export default function MenteeSignup() {
     const ageOptions = ["10대", "20대", "30대", "40대 이상"].filter(age => age !== inputAge);
 
     const handleGenderChange = (value) => {
-        setInputGender(value === "여성" ? false : true);
+        setInputGender(value);
         setShowGenderDropdown(false);
+
     };
 
     const handleAgeChange = (value) => {
@@ -103,6 +105,7 @@ export default function MenteeSignup() {
         // 모든 필드가 유효한지 확인
         const isValid = Object.values(errors).every(error => error === '');
         setIsFormValid(isValid);
+        
     };
 
     useEffect(() => {
@@ -124,7 +127,7 @@ export default function MenteeSignup() {
                   "password": inputPassword, 
                   "nickname" : inputNickname, //닉네임
                   "isMentor" : false,
-                  "gender" : inputGender, // 남자 -> true , 여자 -> false
+                  "gender" : inputGender === '남자', // 남자 -> true , 여자 -> false
                   "age" : inputAge,
                   }),   //실제 데이터 파싱하여 body에 저장
               })
@@ -134,6 +137,7 @@ export default function MenteeSignup() {
       
             if (response.status === 200) {
               alert('회원가입에 성공하였습니다.');
+              navigate('/Signin');
             } else if(response.status === 400){
               alert('입력값이 올바르지 않습니다.')
             }
@@ -146,8 +150,14 @@ export default function MenteeSignup() {
           } catch (error) {
             alert('에러 발생');
           }
-      
-          navigate('/');
+          setInputName='';
+          setInputGender = '';
+          setInputAge = '';
+          setInputId = '';
+          setInputPassword = '';
+          setInputPasswordConfirmed='';
+          setInputNickName ='';
+          
         };
 
     return (
@@ -219,7 +229,7 @@ export default function MenteeSignup() {
                                 value={inputId}
                                 onChange={(e) => setInputId(e.target.value)}
                             />
-                            <button className="check_double"> 중복확인</button>
+                            <button className="check_double" > 중복확인</button>
                         </div>
                         <div className="error_message">{inputErrors.idError}</div>
 
@@ -265,3 +275,4 @@ export default function MenteeSignup() {
         </>
     );
 }
+
