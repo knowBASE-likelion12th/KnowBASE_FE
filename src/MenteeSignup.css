@@ -140,11 +140,10 @@
     color: rgba(0, 0, 0, 0.40);
     background-color: #fff;
 }
-.join_btn{
+.join_btn {
     height: 6vh;
     width: 20vw;
-    background-color: #F0EFEF;
-    color: rgba(0, 0, 0, 0.40);
+    
     font-family: "Noto Sans";
     font-weight: 600;
     border-radius: 5px;
@@ -153,6 +152,17 @@
     color: rgba(0, 0, 0, 0.40);
     align-items: center;
 }
+
+.join_btn:disabled {
+    background-color: #F0EFEF;
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.join_btn:enabled {
+    color: white;
+    background-color: #1CA764;
+}
+
 
 
 
