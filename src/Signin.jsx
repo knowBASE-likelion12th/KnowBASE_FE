@@ -7,16 +7,16 @@ import {
     inputPasswordState,
     inputPasswordConfirmedState,
     inputNickNameState,
-    inputIdState
+    inputIdState,
+    inputCertificateState
 } from "../recoil";
 import Header from "./Header";
 import { useNavigate } from "react-router";
 import '../Styles/MenteeSignup.css';
 import downArrow from '../assets/downArrow.png';
-import Home from './Home'
 import Signin from "./Signin";
 
-export default function MenteeSignup() {
+export default function MentorSignup() {
     const navigate = useNavigate();
     const [inputGender, setInputGender] = useRecoilState(inputGenderState);
     const [inputAge, setInputAge] = useRecoilState(inputAgeState);
@@ -25,7 +25,7 @@ export default function MenteeSignup() {
     const [inputId, setInputId] = useRecoilState(inputIdState);
     const [inputPasswordConfirmed, setInputPasswordConfirmed] = useRecoilState(inputPasswordConfirmedState);
     const [inputNickname, setInputNickName] = useRecoilState(inputNickNameState);
-
+    const [inputCertificate, setInputCertificate] = useRecoilState(inputCertificateState)
     const [showGenderDropdown, setShowGenderDropdown] = useState(false);
     const [showAgeDropdown, setShowAgeDropdown] = useState(false);
 
@@ -44,11 +44,10 @@ export default function MenteeSignup() {
     const handleGenderChange = (value) => {
         setInputGender(value);
         setShowGenderDropdown(false);
-
     };
 
     const handleAgeChange = (value) => {
-        setInputAge(value);
+        setInputGender(value === "여성" ? false : true);
         setShowAgeDropdown(false);
     };
 
@@ -73,7 +72,8 @@ export default function MenteeSignup() {
             idError: '',
             passwordError: '',
             passwordConfirmedError: '',
-            nicknameError: ''
+            nicknameError: '',
+            certificateError: ''
         };
 
         if (!inputName) {
@@ -99,66 +99,70 @@ export default function MenteeSignup() {
         } else if (!validateNickname(inputNickname)) {
             errors.nicknameError = '닉네임은 6~12자 이내의 영문 또는 숫자만 사용 가능합니다.';
         }
+        if(!inputCertificate){
+            errors.certificateError = "재직자 인증 확인 후 가입이 완료됩니다.";
+        }
 
         setInputErrors(errors);
 
         // 모든 필드가 유효한지 확인
         const isValid = Object.values(errors).every(error => error === '');
         setIsFormValid(isValid);
-        
     };
 
     useEffect(() => {
         checkFormValidity();
-    }, [inputName, inputGender, inputAge, inputId, inputPassword, inputPasswordConfirmed, inputNickname]);
+    }, [inputName, inputGender, inputAge, inputId, inputPassword, inputPasswordConfirmed, inputNickname, inputCertificate]);
 
 
     const handleSignUp = async () => {
-          try {
-            const response = await fetch("http://52.78.165.203:8080/api/user/register/mentee", {
-                  method : "POST",         
-                  headers : {            
-                      "Content-Type":"application/json; charset=utf-8"
-                  },
-      
-                  body: JSON.stringify({
-                  "name": inputName, //이름
-                  "userName": inputId, //로그인할 때 쓰는 아이디
-                  "password": inputPassword, 
-                  "nickname" : inputNickname, //닉네임
-                  "isMentor" : false,
-                  "gender" : inputGender === '남자', // 남자 -> true , 여자 -> false
-                  "age" : inputAge,
-                  }),   //실제 데이터 파싱하여 body에 저장
-              })
-      
-            const data = await response.json();
-            console.log(data);
-      
-            if (response.status === 200) {
-              alert('회원가입에 성공하였습니다.');
-              navigate('/Signin');
-            } else if(response.status === 400){
-              alert('입력값이 올바르지 않습니다.')
-            }
-            else if(response.status === 409){
-              alert('이미 존재하는 회원입니다.')
-            }
-            else {
-              alert('회원가입 실패');
-            }
-          } catch (error) {
-            alert('에러 발생');
+        try {
+          const response = await fetch("http://52.78.165.203:8080/api/user/register/mentor", {
+                method : "POST",         
+                headers : {            
+                    "Content-Type":"application/json; charset=utf-8"
+                },
+    
+                body: JSON.stringify({
+                "name": inputName, //이름
+                "userName": inputId, //로그인할 때 쓰는 아이디
+                "password": inputPassword, 
+                "nickname" : inputNickname, //닉네임
+                "employmentPath": inputCertificate,
+                "isMentor" : false,
+                "gender" : inputGender ==='남자', // 남자 -> true , 여자 -> false
+                "age" : inputAge,
+                }),  
+            })
+    
+          const data = await response.json();
+          console.log(data);
+    
+          if (response.status === 200) {
+            alert('회원가입에 성공하였습니다.');
+          } else if(response.status === 400){
+            alert('입력값이 올바르지 않습니다.')
           }
-          setInputName='';
-          setInputGender = '';
-          setInputAge = '';
-          setInputId = '';
-          setInputPassword = '';
-          setInputPasswordConfirmed='';
-          setInputNickName ='';
-          
-        };
+          else if(response.status === 409){
+            alert('이미 존재하는 회원입니다.')
+          }
+          else {
+            alert('회원가입 실패');
+          }
+        } catch (error) {
+          alert('에러 발생');
+        }
+    
+        navigate('/Signin');
+        setInputName='';
+        setInputGender = '';
+        setInputAge = '';
+        setInputId = '';
+        setInputPassword = '';
+        setInputPasswordConfirmed='';
+        setInputNickName ='';
+        setInputCertificate = '';
+      };
 
     return (
         <>
@@ -229,7 +233,7 @@ export default function MenteeSignup() {
                                 value={inputId}
                                 onChange={(e) => setInputId(e.target.value)}
                             />
-                            <button className="check_double" > 중복확인</button>
+                            <button className="check_double"> 중복확인</button>
                         </div>
                         <div className="error_message">{inputErrors.idError}</div>
 
@@ -270,9 +274,22 @@ export default function MenteeSignup() {
                     </div>
                     <div className="error_message">{inputErrors.nicknameError}</div>
                 </div>
+                <div className="input_certificate">
+                    <b>증명서 </b>
+                    <div className="certificate_wrap">
+                    <input
+                        type="file"
+                        placeholder="* (필수) 자격증 또는 재직증명서 첨부 "
+                        className="input_field"
+                        value={inputCertificate}
+                        onChange={(e)=>setInputCertificate(e.target.value)}
+                        />
+                        <button className="check_double"> 첨부확인</button>
+                    </div>
+                    <div className="error_message">{inputErrors.certificateError}</div>
+                </div>
                 <button className="join_btn" disabled={!isFormValid}  onClick={handleSignUp}>가입하기</button>
             </div>
         </>
     );
 }
-
