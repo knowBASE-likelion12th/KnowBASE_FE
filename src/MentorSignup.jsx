@@ -130,7 +130,7 @@ export default function MentorSignup() {
                 "nickname" : inputNickname, //닉네임
                 "employmentPath": inputCertificate,
                 "isMentor" : false,
-                "gender" : inputGender, // 남자 -> true , 여자 -> false
+                "gender" : inputGender ==='남자', // 남자 -> true , 여자 -> false
                 "age" : inputAge,
                 }),  
             })
@@ -154,6 +154,14 @@ export default function MentorSignup() {
         }
     
         navigate('/Signin');
+        setInputName='';
+        setInputGender = '';
+        setInputAge = '';
+        setInputId = '';
+        setInputPassword = '';
+        setInputPasswordConfirmed='';
+        setInputNickName ='';
+        setInputCertificate = '';
       };
 
     return (
@@ -285,3 +293,4 @@ export default function MentorSignup() {
         </>
     );
 }
+
